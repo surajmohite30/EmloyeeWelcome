@@ -17,7 +17,7 @@ public class TestController {
 	
 	@RequestMapping("/")
 	public String firstPage() {
-		return "Welcome to Application, Running on server";
+		return "Welcome to SpringBoot Application, Running on server AWS server using jenkins";
 	}
 
 	private List<Employee> employees = createList();

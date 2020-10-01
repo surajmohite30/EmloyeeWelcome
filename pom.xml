@@ -48,7 +48,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+   					<url>http://localhost:8070/manager/text</url>
+   					<path>/rps</path>
+  				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	
+	<server>
+  		<id>maven-tomcat-war-deployment-server></id>
+  		<username>tomcatadmin</username>
+  		<password>tomcatadmin</password>
+	</server>
 </project>

@@ -19,11 +19,16 @@ public class TestController {
 	public String firstPage() {
 		return "Welcome to SpringBoot Application, Running on server AWS server using jenkins. This is Suraj";
 	}
+	
+	@RequestMapping("/emp1")
+	public String empPage() {
+		return "Welcome to emp1, How can i help you?";
+	}
 
 	private List<Employee> employees = createList();
 
 	@GetMapping(value = "/allemp",produces = "application/json")
-	public List<Employee> empPage() {
+	public List<Employee> allempPage() {
 		return employees;
 	}
 
